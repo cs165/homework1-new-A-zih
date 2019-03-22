@@ -1,3 +1,126 @@
 /**
  TODO(you): Add CSS for the list that you create yourself!
 */
+body{
+    margin:0;
+    text-align: center;
+    height:100%;
+    background-color: #AAAAAA;
+}
+.bgimg-1,.bgimg-2,.bgimg-3,.bgimg-4{
+    position: relative;
+    opacity:0.8;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg-1{
+    background-image: url("../images/background.jpg");
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:980px;
+    
+}
+.bgimg-2{
+  background-image: url("../images/sport.jpg");
+    min-height:800px; 
+}
+.bgimg-2:hover{
+    background-image: url("../images/sport2.jpg");
+}
+.bgimg-3{
+    background-image: url("../images/supermoto.jpg");
+    min-height:800px; 
+}
+.bgimg-3:hover{
+    background-image: url("../images/supermoto2.jpg");
+}
+.bgimg-4{
+    background-image: url("../images/cafe.jpg");
+    min-height:980px; 
+}
+.bgimg-4:hover{
+    background-image: url("../images/cafe2.jpg");
+}
+.caption{
+    position: relative;
+    height:450px;
+    left:450px;
+    top:-80px;
+    font-size:100px;
+    color:white;
+    font-family:'Roboto Slab',serif;   
+    font-weight: normal;  
+}
+.title{
+    text-align:left;
+    margin-bottom:60px;
+}
+.index{
+    text-align:center;
+    font-size:60%;
+    margin-bottom:30px;
+    animation-name:ani;
+    animation-duration: 3s;
+}
+@keyframes ani{
+    from{
+        left:-150px;
+        opacity:0;
+    }
+    to{
+        left:0px;
+        opacity: 1;
+    }
+}
+.profile{
+    background-color : #DDDDDD;
+    opacity: 0.65;
+    font-family:'Source Sans Pro',sans-serif;
+    font-size:30px;
+    display:inline-block;
+    width:66.67%;
+    height:200px;
+}
+#photo{
+    position: relative;
+    bottom:142px;
+    left:300px;
+}
+#photo img{
+    height:190px;
+}
+#about{
+    position: relative;
+    font-family:'Roboto Slab',serif;
+    font-size:50px;
+    margin-top:80px;
+    margin-right:60%;
+}
+#name{
+    position: relative;
+    margin-top:-80px;
+    text-align: center;
+    font-weight: bold;
+}
+#info{
+    position: relative;
+    margin-top:20px;
+    font-style: italic;
+  
+}
+h2{
+    font-family:'Roboto Slab',serif;
+    font-size:36px;
+    font-weight:bold;
+    color: rgb(51,51,51);
+    margin-bottom:0px;
+}
+p{
+    max-width: 80%;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+}
